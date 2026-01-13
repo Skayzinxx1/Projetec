@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contato | Projetec</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<style>
+  #meuFormulario .d-flex {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#meuFormulario input,
+#meuFormulario textarea {
+  width: 100%;
+}
+
+
+.container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  #meuFormulario .d-flex {
+    flex-direction: column; 
+  }
+
+  #meuFormulario .btn {
+    width: 100%;
+  }
+
+  .container p {
+    text-align: center;
+  }
+}
+</style>
+<body style="padding: 0px;">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="index.html"><img class="pular" src="img/aq.png" height="40px"></a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Pagina Inicial</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Projetos</a></li>
+        <li class="nav-item">
+          <a class="btn btn-danger ms-lg-3" href="contato.html">Solicitar Serviço</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container py-5">
+  <h2 class="section-title">Solicitar Serviço</h2>
+
+  <form id="meuFormulario">
+  <input class="form-control mb-2" id="nome" placeholder="Seu nome" required>
+  <input class="form-control mb-2" id="email" placeholder="Seu e-mail">
+  <textarea class="form-control mb-2" id="mensagem" placeholder="Descreva o serviço" required></textarea>
+  
+  <div class="d-flex gap-2">
+    <button type="button" onclick="enviarWhats()" class="btn btn-success">WhatsApp</button>
+    
+    <button type="button" onclick="enviarEmail()" class="btn btn-danger">Enviar pelo e-mail</button>
+  </div>
+</form>
+
+  <p class="mt-4">
+    📍 Av. Faria Pereira, 4060 – Patrocínio MG<br>
+    📞 (34) 3831-6333<br>
+    📧 projetec@gmail.com
+  </p>
+</div>
+
+ 
+ <footer class="footer">
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+      <h2>
+        <span class="brand-red">𝐏𝐫𝐨𝐣𝐞</span><span class="brand-dark">𝐓𝐞𝐜</span>
+      </h2>
+      <p>
+        Soluções completas em infraestrutura elétrica, com qualidade,
+        segurança e compromisso desde 2003.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Paginas</h4>
+      <ul>
+        <a href="index.html" ><li>Inicial</li></a>
+         <a href="sobre.html" ><li>Sobre</li></a>
+         <a href="contato.html" ><li>Serviço</li></a>
+         <a href="portfolio.html" ><li>Projetos</li></a>
+         
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Serviços</h4>
+      <ul>
+        <a href="servicos.html#a" ><li>Redes Elétricas</li></a>
+       <a href="servicos.html" ><li>Manutenção</li></a>
+         <a href="servicos.html#b" ><li>Eletrificação e </li></a>
+         <a href="servicos.html#c" ><li>Subestação</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <p>
+        Av. Faria Pereira, 4060 – São Cristóvão<br>
+        Patrocínio – MG
+      </p>
+      <p>
+        projetec@gmail.com.br<br>
+        (34) 3831-6333
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Projetec Construções Elétricas LTDA – Patrocínio MG
+  </div>
+</footer>
+
+<script src="js/form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

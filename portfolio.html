@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Projetos | Projetec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/icon.png" type="image/x-icon" />
+  <style>
+    body {
+      padding: 0;
+      background: #f9f9f9;
+ 
+      color: #222;
+    }
+
+      .service-hero {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('https://patrocinioonline.com.br/media/uploads/2019/07/22/whatsapp-image-2019-07-22-at-132700-2.jpeg') center/cover;
+    color: #fff;
+    padding: 150px 0;
+  }
+    .section-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 2.5rem;
+      color: #000;
+      border-bottom: 3px solid #dc3545;
+      padding-bottom: 0.5rem;
+      max-width: fit-content;
+    }
+
+    
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      align-items: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+
+    .card {
+      box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+      border-radius: 14px;
+      background: #fff;
+      width: 100%;
+      max-width: 700px;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgb(0 0 0 / 0.15);
+    }
+
+    .project-info {
+      font-size: 1.3rem;
+      color: #222;
+      line-height: 1.6;
+      max-width: 55%;
+    }
+
+    .project-info strong {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #000;
+      display: inline-block;
+      min-width: 110px;
+    }
+
+    .project-info-small {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.5;
+      max-width: 55%;
+    }
+
+    .project-info-small strong {
+      font-weight: 700;
+      color: #000;
+      min-width: 110px;
+      display: inline-block;
+    }
+
+    .project-img-large,
+    .project-img-small {
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+      max-height: 300px;
+      max-width: 40%;
+      flex-shrink: 0;
+    }
+
+    .project-img-small {
+      max-height: 100px;
+      max-width: 40%;
+    }
+
+    @media (max-width: 767px) {
+      .projects-container {
+        max-width: 100%;
+      }
+
+      .card {
+        flex-direction: column;
+        min-height: auto;
+        padding: 1rem;
+      }
+
+      .project-info,
+      .project-info-small {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .project-img-large,
+      .project-img-small {
+        max-width: 100%;
+        max-height: 250px;
+      }
+    }
+
+    footer {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer h4 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #dc3545;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      color: #b02030;
+    }
+
+    footer ul {
+      padding-left: 0;
+    }
+
+    footer ul li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+  border-radius: 14px;
+  background: #fff;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-info-small {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 55%;
+}
+
+.project-info-small strong {
+  font-weight: 700;
+  color: #000;
+  min-width: 110px;
+  display: inline-block;
+}
+
+.project-img-large,
+.project-img-small {
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+  max-height: 300px;
+  max-width: 40%;
+  flex-shrink: 0;
+}
+
+.project-img-small {
+  max-height: 150px;
+}
+
+
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .project-info-small {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .project-img-large,
+  .project-img-small {
+    max-width: 100%;
+    max-height: 250px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="index.html"><img class="pular" src="img/aq.png" height="40px"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Pagina Inicial</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Projetos</a></li>
+        <li class="nav-item"><a class="btn btn-danger ms-lg-3" href="contato.html">Solicitar Serviço</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="service-hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Obras e Projetos</h1>
+    <p class="lead mt-3">
+      Obras e projetos concluidos.
+    </p>
+   
+  </div>
+</div>
+  <h1 class="fw-bold" style="text-align: center;">Finalizados</h1>
+    <div style="padding-top: 40px;" class="projects-container">
+      <div class="card">
+        <div class="project-info-small">
+          <p><strong>Projeto:</strong> Eletrificação Rural</p>
+          <p><strong>Cliente:</strong> CEMIG</p>
+          <p><strong>Ano:</strong> 2023</p>
+        </div>
+        <img src="img/OBRA.JPG" alt="Eletrificação Rural" class="project-img-large" />
+      </div>
+
+      <div class="card">
+        <div class="project-info-small">
+          <p><strong>Projeto:</strong> Subestação Elétrica</p>
+          <p><strong>Cliente:</strong> CBMM</p>
+          <p><strong>Ano:</strong> 2022</p>
+        </div>
+        <img src="img/subestac.JPG" alt="Subestação" class="project-img-small" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+      <h2>
+        <span class="brand-red">𝐏𝐫𝐨𝐣𝐞</span><span class="brand-dark">𝐓𝐞𝐜</span>
+      </h2>
+      <p>
+        Soluções completas em infraestrutura elétrica, com qualidade,
+        segurança e compromisso desde 2003.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Paginas</h4>
+      <ul>
+        <a href="index.html" ><li>Inicial</li></a>
+         <a href="sobre.html" ><li>Sobre</li></a>
+            <a href="contato.html" ><li>Serviço</li></a>
+         <a href="portfolio.html" ><li>Projetos</li></a>
+      
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Serviços</h4>
+      <ul>
+        <a href="servicos.html#a" ><li>Redes Elétricas</li></a>
+       <a href="servicos.html" ><li>Manutenção</li></a>
+         <a href="servicos.html#b" ><li>Eletrificação e </li></a>
+         <a href="servicos.html#c" ><li>Subestação</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <p>
+        Av. Faria Pereira, 4060 – São Cristóvão<br>
+        Patrocínio – MG
+      </p>
+      <p>
+        projetec@gmail.com.br<br>
+        (34) 3831-6333
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Projetec Construções Elétricas LTDA – Patrocínio MG
+  </div>
+</footer>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Serviços | Projetec Construções Elétricas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/icon.png" type="image/x-icon">
+
+<style>
+  .service-hero {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('https://patrocinioonline.com.br/media/uploads/2019/07/22/whatsapp-image-2019-07-22-at-132700-1.jpeg') center/cover;
+    color: #fff;
+    padding: 120px 0;
+  }.servico-img {
+  width: 100%;
+  height: 300px;     
+  object-fit: cover;
+}
+  body
+  {
+    padding-top: 0px;
+    padding: 0px;
+  }
+  .service-card img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .process-step i {
+    font-size: 40px;
+    color: #dc3545;
+  }
+
+  .cta {
+    background: #dc3545;
+    color: white;
+    padding: 60px 0;
+  }
+  .card-title, .card-text {
+    text-align: center;
+  }
+.service-hero {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('https://patrocinioonline.com.br/media/uploads/2019/07/22/whatsapp-image-2019-07-22-at-132700-1.jpeg') center/cover;
+    color: #fff;
+    padding: 80px 0; 
+  }
+
+  
+  @media (min-width: 768px) {
+    .service-hero { padding: 120px 0; }
+  }
+
+  .servico-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    .servico-img { height: 300px; }
+  }
+
+  .service-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .process-step {
+    margin-bottom: 30px; 
+  }
+
+  .process-step i {
+    font-size: 40px;
+    color: #dc3545;
+  }
+
+  .cta {
+    background: #dc3545;
+    color: white;
+    padding: 60px 20px;
+  }
+
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="index.html"><img class="pular" src="img/aq.png" height="40px"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Pagina Inicial</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Projetos</a></li>
+        <li class="nav-item"><a class="btn btn-danger ms-lg-3" href="contato.html">Solicitar Serviço</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="service-hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Nossos Serviços</h1>
+    <p class="lead mt-3">
+      Soluções completas em infraestrutura elétrica, engenharia e topografia,
+      com segurança, qualidade e compromisso.
+    </p>
+    <a href="#servicos" class="btn btn-danger mt-3">Conheça nossos serviços</a>
+  </div>
+</div>
+
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="fw-bold">Atividades da Empresa</h2>
+      <p>
+        A <strong>Projetec Construções Elétricas Ltda</strong> atua há mais de
+        20 anos no mercado, sendo especializada em
+        <strong>construções de estações e redes de distribuição de energia elétrica</strong>,
+        conforme CNAE 42.21-9-02.
+      </p>
+      <p>
+        Atendemos empresas de energia, indústrias, consórcios e o setor público,
+        sempre seguindo rigorosamente as normas técnicas e de segurança.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img  src="img/infraerutura.jfif"
+           class="img-fluid rounded shadow"
+           alt="Infraestrutura elétrica">
+    </div>
+  </div>
+</div>
+
+<div id="servicos" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Principais Serviços</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="img/oi (2).jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title" id="a">Redes Elétricas</h5>
+            <p class="card-text">
+              Construção de redes de transmissão e distribuição de energia,
+              garantindo eficiência, segurança e confiabilidade.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="img/oi (8).jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title" id="b">Eletrificação Urbana e Rural</h5>
+            <p class="card-text">
+              Implantação e ampliação de redes elétricas para áreas urbanas e rurais,
+              promovendo desenvolvimento e qualidade de vida.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="img/oi (5).jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title" id="c">Subestações</h5>
+            <p class="card-text">
+              Montagem, manutenção e adequação de subestações,
+              seguindo normas técnicas e padrões de segurança.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container py-5">
+  <h2 class="fw-bold text-center mb-4">Serviços Técnicos Especializados</h2>
+
+  <div class="row text-center">
+    <div class="col-md-4 process-step">
+      <i class="bi bi-map"></i>
+      <h5 class="mt-3">Topografia</h5>
+      <p>
+        Levantamentos topográficos urbanos, rurais e industriais,
+        fundamentais para obras de infraestrutura.
+      </p>
+    </div>
+
+    <div class="col-md-4 process-step">
+      <i class="bi bi-lightning-charge"></i>
+      <h5 class="mt-3">Engenharia Elétrica</h5>
+      <p>
+        Elaboração e execução de projetos elétricos,
+        acompanhamento técnico e manutenção.
+      </p>
+    </div>
+
+    <div class="col-md-4 process-step">
+      <i class="bi bi-building"></i>
+      <h5 class="mt-3">Engenharia Civil</h5>
+      <p>
+        Consultoria, gestão e execução de obras,
+        garantindo qualidade e cumprimento de prazos.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-light py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5">Como Nossos Serviços Funcionam</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-3 text-center">
+        <img src="img/analise.png" class="img-fluid servico-img rounded shadow mb-3" alt="Análise Técnica">
+        <h5 class="fw-bold">1️⃣ Análise Técnica e Legal</h5>
+        <p>
+          Levantamento completo da área, avaliando viabilidade técnica,
+          normas ambientais e legislações aplicáveis, garantindo total
+          conformidade e segurança.
+        </p>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="img/projeto.jpg" class="img-fluid servico-img rounded shadow mb-3" alt="Projeto Elétrico">
+        <h5 class="fw-bold">2️⃣ Desenvolvimento do Projeto</h5>
+        <p>
+          Elaboração de projetos elétricos e de engenharia com soluções
+          eficientes, seguras e alinhadas às necessidades do cliente.
+        </p>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="img/obra.webp" class="img-fluid servico-img rounded shadow mb-3" alt="Execução da Obra">
+        <h5 class="fw-bold">3️⃣ Execução da Obra</h5>
+        <p>
+          Execução realizada por equipe especializada, utilizando
+          equipamentos próprios e seguindo rigorosamente os padrões
+          técnicos e de segurança.
+        </p>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="img/obra.jfif" class="img-fluid servico-img rounded shadow mb-3" alt="Entrega Final">
+        <h5 class="fw-bold">4️⃣ Finalização e Entrega</h5>
+        <p>
+          Testes finais, ajustes técnicos e entrega da obra concluída
+          dentro do prazo, com qualidade, segurança e documentação adequada.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="cta text-center">
+  <div class="container">
+    <h2 class="fw-bold">Precisa de um serviço elétrico confiável?</h2>
+    <p class="lead mt-3">
+      Fale com a Projetec e solicite um orçamento sem compromisso.
+    </p>
+    <a href="contato.html" class="btn btn-light btn-lg mt-3">
+      Solicitar Orçamento
+    </a>
+  </div>
+</div>
+
+
+ <footer class="footer">
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+      <h2>
+        <span class="brand-red">𝐏𝐫𝐨𝐣𝐞</span><span class="brand-dark">𝐓𝐞𝐜</span>
+      </h2>
+      <p>
+        Soluções completas em infraestrutura elétrica, com qualidade,
+        segurança e compromisso desde 2003.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Paginas</h4>
+      <ul>
+        <a href="index.html" ><li>Inicial</li></a>
+         <a href="sobre.html" ><li>Sobre</li></a>
+                  <a href="contato.html" ><li>Serviço</li></a>
+         <a href="portfolio.html" ><li>Projetos</li></a>
+
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Serviços</h4>
+      <ul>
+        <a href="servicos.html#a" ><li>Redes Elétricas</li></a>
+       <a href="servicos.html" ><li>Manutenção</li></a>
+         <a href="servicos.html#b" ><li>Eletrificação e </li></a>
+         <a href="servicos.html#c" ><li>Subestação</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <p>
+        Av. Faria Pereira, 4060 – São Cristóvão<br>
+        Patrocínio – MG
+      </p>
+      <p>
+        projetec@gmail.com.br<br>
+        (34) 3831-6333
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Projetec Construções Elétricas LTDA – Patrocínio MG
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
