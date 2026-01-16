@@ -38,7 +38,7 @@ a {
 }
 
 .brand-red {
-  color: #dc3545;
+  color: #a30000;
 }
 
 .brand-dark {
@@ -50,6 +50,11 @@ a {
   line-height: 1.6;
   max-width: 300px;
 }
+.btn-danger{
+  --bs-btn-bg: #A30000;
+}
+
+
 
 
 .footer-column h4 {
@@ -63,7 +68,7 @@ a {
   content: "";
   width: 35px;
   height: 2px;
-  background: #dc3545;
+  background: #a30000;
   display: block;
   margin-top: 6px;
 }
@@ -81,7 +86,7 @@ a {
 }
 
 .footer-column li:hover {
-  color: #dc3545;
+  color: #a30000;
   padding-left: 6px;
 }
 
@@ -108,6 +113,7 @@ a {
 }
 
 .pular {
+  height: 50px;
     transition: transform 0.3s ease;
 }
 
